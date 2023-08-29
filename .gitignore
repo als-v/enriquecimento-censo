@@ -43,6 +43,7 @@ MANIFEST
 *.manifest
 *.spec
 
-./data/caged/
-./data/censo/
-./data/ibge/
+data/caged/*
+data/censo/*
+data/ibge/*
+result/*

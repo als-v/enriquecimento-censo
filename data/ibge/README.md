@@ -4,11 +4,13 @@ A coleta e a correta organização dos dados do IBGE é essencial para o bom fun
 
 ## Conjuntos de Dados
 
-Foram coletados dois conjuntos de dados do IBGE para este projeto:
+Foram coletados três conjuntos de dados do IBGE para este projeto:
 
 1. **PIB (Produto Interno Bruto):** Este conjunto contém informações econômicas relevantes para a análise. Os dados foram obtidos por meio da consulta ao Sistema IBGE de Recuperação Automática (SIDRA) e podem ser encontrados aqui: [PIB - SIDRA](https://sidra.ibge.gov.br/tabela/5938).
 
 2. **POPULAÇÃO:** Este conjunto compreende dados demográficos essenciais para as análises. Os dados também foram obtidos por meio do SIDRA e podem ser acessados aqui: [POPULAÇÃO - SIDRA](https://sidra.ibge.gov.br/tabela/6579).
+
+3. **Índice de Desenvolvimento Humano Municipal:** Este conjunto compreende dados referentes ao Índice de Desenvolvimento Humano Municipal. Os dados foram obtidos através do website: [IDHM](https://www.undp.org/pt/brazil/idhm-munic%C3%ADpios-2010), e foram inseridos em um conjunto csv, estando aqui disponibilizado.
 
 ## Procedimentos de Coleta
 
@@ -29,7 +31,9 @@ ibge/
 ├── pib/
 │   └── data.csv
 └── populacao/
-    └── data.csv
+│   └── data.csv
+└── idh/
+│   └── data.csv
 ```
 
 ## Contato

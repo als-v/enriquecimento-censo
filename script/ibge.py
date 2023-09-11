@@ -18,12 +18,12 @@ def agregacaoDadosIBGE(dataFrame):
             
             if ano in['Cód.', 'Município']:
                 continue
-            
-            pib = float(str(dataPibMunicipio[str(ano)].values[0]).replace(',', '.'))
-            pop = float(str(dataPopMunicipio[str(ano)].values[0]).replace(',', '.'))
-            dataFrame.loc[(dataFrame['CO_MUNICIPIO'] == municipio) & (dataFrame['ANO'] == ano), 'M_PIB'] = pib
-            dataFrame.loc[(dataFrame['CO_MUNICIPIO'] == municipio) & (dataFrame['ANO'] == ano), 'M_POP'] = pop
-            dataFrame.loc[(dataFrame['CO_MUNICIPIO'] == municipio) & (dataFrame['ANO'] == ano), 'M_PIB_POP'] = float(str(dataPibMunicipio[str(ano)].values[0]).replace(',', '.'))/float(str(dataPopMunicipio[str(ano)].values[0]).replace(',', '.'))
 
+            pib = float(str(dataPibMunicipio[ano].values[0]).replace(',', '.'))
+            pop = float(str(dataPopMunicipio[ano].values[0]).replace(',', '.'))
+            dataFrame.loc[(dataFrame['CO_MUNICIPIO'] == municipio) & (dataFrame['ANO'] == int(ano)), 'M_PIB'] = pib
+            dataFrame.loc[(dataFrame['CO_MUNICIPIO'] == municipio) & (dataFrame['ANO'] == int(ano)), 'M_POP'] = pop
+            dataFrame.loc[(dataFrame['CO_MUNICIPIO'] == municipio) & (dataFrame['ANO'] == int(ano)), 'M_PIB_POP'] = float(str(dataPibMunicipio[ano].values[0]).replace(',', '.'))/float(str(dataPopMunicipio[ano].values[0]).replace(',', '.'))
+            
     return dataFrame
     

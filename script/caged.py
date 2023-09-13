@@ -329,6 +329,7 @@ def checkDifferentSizes(showAno=False, showMes=False):
 
 def firstAccessData():
 
+    # definição de variáveis
     sep = ';'
     municipioColumn = 'Município'
     cboColumn = 'CBO 2002 Ocupação'
